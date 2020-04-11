@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>	
+<style>
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+</style>			
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 160px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.imp{
+float: right;
+}
+</style>
+</head>
+<body>
+MANAGER   &nbsp&nbsp&nbsp<input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+<div class="imp">
+<i class="fa fa-sign-out"></i><input type="button" name="clickbtn1" value="Logout">
+</div>
+	  </br>
+	  </br>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Table view</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Kot view</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Coin status</button>
+  
+</div>
+
+<div id="London" class="tabcontent">
+</br>
+SECTION1
+</br>
+</br>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>1</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>2</h3>
+    </div>
+  </div> 
+  <div class="column">
+    <div class="card">
+      <h3>3</h3>
+    </div>
+  </div>
+</div>
+</br>
+</br>
+SECTION2
+</br>
+</br>
+ <div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>1</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>2</h3>
+    </div>
+  </div> 
+  <div class="column">
+    <div class="card">
+      <h3>3</h3>
+    </div>
+  </div>
+</div>
+</br>
+</br>
+SECTION3
+</br>
+</br>
+ <div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>1</h3>
+    </div>
+  </div>
+	
+  <div class="column">
+    <div class="card">
+      <h3>2</h3>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>3</h3>
+    </div>
+  </div>
+</div>
+</div>
+<div id="Paris" class="tabcontent">
+  <div class="tab">
+  <button class="tablinks1" onclick="openCity1(event, 'Inprocess')">Inprocess</button>
+  <button class="tablinks1" onclick="openCity1(event, 'Completed')">Completed</button>
+  <button class="tablinks1" onclick="openCity1(event, 'Cancelled')">Cancelled</button>
+</div>
+<div id="Inprocess" class="tabcontent1">
+<div class="row">
+</br>
+  <div class="column">
+    <div class="card">
+	
+      <h3>1</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>2</h3>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>3</h3>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="Completed" class="tabcontent1">
+<div class="row">
+</br>
+  <div class="column">
+    <div class="card">
+      <h3>1</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>2</h3>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>3</h3>
+    </div>
+  </div>
+</div>
+</div>
+
+<div id="Cancelled" class="tabcontent1">
+<div class="row">
+</br>
+  <div class="column">
+    <div class="card">
+      <h3>1</h3>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>2</h3>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>3</h3>
+    </div>
+  </div>
+  <br>
+</div>
+</div>
+
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <div class="tab">
+  <button class="tablinks2" onclick="openCity2(event, 'avail')">Available coins</button>
+  <button class="tablinks2" onclick="openCity2(event, 'deposit')">Deposited coins</button>
+</div>
+
+<div id="avail" class="tabcontent2">
+  <table>
+  <tr>
+    <td>10000 x</td>
+    <td><input type="text" id="tenthou" name="thou1"></td>
+  </tr>
+  <tr>
+    <td>5000 x</td>
+    <td><input type="text" id="fivethou" name="thou1"></td>
+  </tr>
+  <tr>
+   <td>2000 x</td>
+    <td><input type="text" id="twothou" name="thou1"></td>
+  </tr>
+  <tr>
+   <td>1000 x</td>
+    <td><input type="text" id="thou" name="thou1"></td>
+  </tr>
+  <tr>
+   <td>500 x</td>
+    <td><input type="text" id="fivehun" name="thou1"></td>
+  </tr>
+  <tr>
+   <td>100 x</td>
+    <td><input type="text" id="hun" name="thou1"></td>
+  </tr>
+   <tr>
+   <td>50 x</td>
+    <td><input type="text" id="fifty" name="thou1"></td>
+  </tr>
+  <tr>
+   <td><input type="button" name="clickbtn" value="Total" onclick="add_number()"></td>
+    <td><input type="text" id="txtresult" name="thou1"></td>
+  </tr>
+</table>
+</div>
+
+<div id="deposit" class="tabcontent2">
+  
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<script>
+function openCity2(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent2");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks2");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<script>
+function openCity1(evt, cityName) {
+  var i, tabcontent1, tablinks1;
+  tabcontent1 = document.getElementsByClassName("tabcontent1");
+  for (i = 0; i < tabcontent1.length; i++) {
+    tabcontent1[i].style.display = "none";
+  }
+  tablinks1 = document.getElementsByClassName("tablinks1");
+  for (i = 0; i < tablinks1.length; i++) {
+    tablinks1[i].className = tablinks1[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<script type="text/javascript">
+            function add_number() {
+
+            var first_number = parseInt(document.getElementById("tenthou").value);
+            var second_number = parseInt(document.getElementById("fivethou").value);
+			var third_number = parseInt(document.getElementById("twothou").value);
+			var fourth_number = parseInt(document.getElementById("thou").value);
+			var fifth_number = parseInt(document.getElementById("fivehun").value);
+			var sixth_number = parseInt(document.getElementById("hun").value);
+			var seventh_number = parseInt(document.getElementById("fifty").value);
+            var result = (first_number*10000)+(second_number*5000)+(third_number*2000)+(fourth_number*1000)+(fifth_number*500)+
+			(sixth_number*100)+(seventh_number*50);
+            document.getElementById("txtresult").value = result;
+        }	
+        </script>
+</body>
+</html> 
